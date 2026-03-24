@@ -1,0 +1,5 @@
+import calendar
+d=calendar.calendar(2005)
+b=calendar.month(2005,4)
+a=calendar.isleap(2005)
+print(d,b,a)
