@@ -1,0 +1,12 @@
+import qrcode
+
+x=qrcode.QRCode()
+
+msg = "NIRANJANA IS INTELLIGENT"
+x.add_data(msg)
+x.make(fit=True)
+
+res = x.make_image(fill_color="black", back_color="white")
+res.save("niranj.png")
+
+print("Created successfully!!")
